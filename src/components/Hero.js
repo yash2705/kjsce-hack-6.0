@@ -1,30 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [username, setUsername] = useState("");
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.largeFont}>
-        A supporter is worth a thousand followers.
-      </div>
+      <div className={styles.largeFont}>MEDI-CHAIN</div>
       <div className={styles.mediumFont}>
-        Make an Income Doing What You Love! The free, friendly way to accept
-        donations directly from fans.
+        Save you medical reports at one place.
       </div>
       <div className={styles.container}>
         <div className={styles.leftContainer}>
-          <div>tipmeanether/</div>
+          <div>medichain/</div>
           <input
             className={styles.input}
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
-        <Link to="/connect">
-          <div className={styles.button}>Claim</div>
-        </Link>
+        <div className={styles.button}>find</div>
       </div>
     </div>
   );
