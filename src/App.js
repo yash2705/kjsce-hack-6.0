@@ -1,23 +1,9 @@
-<<<<<<< HEAD
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Stack from "@mui/material/Stack";
-import { styled } from "@mui/material/styles";
-import ArticleIcon from "@mui/icons-material/Article";
-import image from "./assets/bg.jpg";
+import React, { useEffect } from "react";
+import { useMoralis } from "react-moralis";
 import "./App.css";
-import Landing from "./Landing";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Landing from "./landing";
+
 // const Item = styled(Paper)(({ theme }) => ({
 //   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
 //   ...theme.typography.body2,
@@ -178,20 +164,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // export default ResponsiveAppBar;
 
 const App = () => {
-  return <Landing />;
+  const { user, isAuthenticated } = useMoralis();
+  return isAuthenticated && user ? <Home /> : <Landing />;
 };
-=======
-import Card from "./components/Card";
-import Navbar from "./components/Navbar";
-
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Card />
-    </>
-  );
-}
->>>>>>> 0253f73760fce326f6ec58ac5dd47a89cf97afd6
 
 export default App;
