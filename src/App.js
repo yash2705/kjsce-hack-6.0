@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -179,5 +180,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return <Landing />;
 };
+=======
+import Card from "./components/Card";
+import Navbar from "./components/Navbar";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Card />
+    </>
+  );
+}
+>>>>>>> 0253f73760fce326f6ec58ac5dd47a89cf97afd6
 
 export default App;
