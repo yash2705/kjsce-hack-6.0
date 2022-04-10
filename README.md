@@ -1,15 +1,5 @@
-# Basic Sample Hardhat Project
+MEDI-CHAIN
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+A large number of employees have to submit quaterly and half-yearly medical reports to their employers, However, many a times, employees try to decieve their employers by submitting a fake medical report, That's where we come in! All your medical reports in one place on the blockchain, 100% authentic, 100% verified.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+This is also our entry for KJSCE Hack 6.0
