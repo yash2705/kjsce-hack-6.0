@@ -164,7 +164,11 @@ const ReportForm = () => {
           />
         </div>
       )}
+<<<<<<< HEAD
       <button type="submit" onClick={formSubmit}>Submit</button>
+=======
+      <button type="submit" onClick={() => {}} />
+>>>>>>> dc3458d253a07446ede4c12992638d24d6df4c2f
     </div>
   );
 };

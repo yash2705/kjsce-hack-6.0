@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./Home";
 import Landing from "./landing";
 import ReportForm from "./ReportForm";
+import ReportList from "./ReportList";
 
 // const Item = styled(Paper)(({ theme }) => ({
 //   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
