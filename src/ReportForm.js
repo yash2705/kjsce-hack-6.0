@@ -17,6 +17,31 @@ const ReportForm = () => {
   const haemoglobinRef = useRef(null);
   const bloodGroupRef = useRef(null);
   const [type, setType] = useState("cbc");
+  const fields = ["Wallet Address: ", "Age: ", "Sex: ", "Date: ", "Sample ID: ", "Blood Test Type: "];
+  
+
+  function formSubmit(){
+    const doc = new jsPDF();
+    var str = fields[0].concat(walletAddr.current.value+"\n");
+    str += fields[1].concat(ageRef.current.value+"\n");
+    str += fields[2].concat(sexRef.current.value+"\n");
+    str += fields[3].concat(sampleCollectedOnRef.current.value+"\n");
+    str += fields[4].concat(sampleIDref.current.value+"\n");
+    str += fields[5].concat(typeRef.current.value+"\n");
+
+    if(type==="cbc"){
+      str += "WBC Count: ".concat(wbcRef.current.value+"\n");
+      str += "RBC Count: ".concat(rbcRef.current.value+"\n");
+      str += "Platelet Count: ".concat(platletRef.current.value+"\n");
+      str += "Haemoglobin: ".concat(bloodGroupRef.current.value+"\n");
+    }else{
+      str += "Blood Group: ".concat(bloodGroupRef.current.value+"\n");
+    }
+    
+    doc.text(str, 10, 10);
+    doc.save("ReportForm.pdf");
+  }
+
   return (
     <div className="flex flex-col space-y-4 max-w-4xl justify-center h-screen mx-auto bg-slate-100">
       <div className="text-center text-3xl font-semibold">
@@ -118,7 +143,7 @@ const ReportForm = () => {
             <input
               ref={platletRef}
               className="border border-black px-4 rounded-full bg-white w-4/5 mx-auto py-2"
-              placeholder="Platlet Count"
+              placeholder="Platelet Count"
             />
           </div>
           <div className="flex items-center">
@@ -139,7 +164,7 @@ const ReportForm = () => {
           />
         </div>
       )}
-      <button type="submit" onClick={} />
+      <button type="submit" onClick={formSubmit}>Submit</button>
     </div>
   );
 };
