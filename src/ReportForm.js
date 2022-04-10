@@ -3,7 +3,7 @@
 import React, { useRef, useState } from "react";
 import "./App.css";
 import { jsPDF } from "jspdf";
-
+import { pinFileToIPFS } from "./Pinata";
 const ReportForm = () => {
   const walletAddr = useRef(null);
   const ageRef = useRef(null);
@@ -40,6 +40,7 @@ const ReportForm = () => {
     
     doc.text(str, 10, 10);
     doc.save("ReportForm.pdf");
+    pinFileToIPFS();
   }
 
   return (
@@ -164,11 +165,7 @@ const ReportForm = () => {
           />
         </div>
       )}
-<<<<<<< HEAD
-      <button type="submit" onClick={formSubmit}>Submit</button>
-=======
-      <button type="submit" onClick={() => {}} />
->>>>>>> dc3458d253a07446ede4c12992638d24d6df4c2f
+      <button type="submit" onClick={formSubmit} />
     </div>
   );
 };
