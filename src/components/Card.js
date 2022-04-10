@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import React from "react";
 
->>>>>>> ddf8d40426134da03d376721e5c77f4ab201534f
 const Card = ({ image, title, description }) => {
   return (
     <div className={styles.wrapper}>

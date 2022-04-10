@@ -12,13 +12,10 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
     "formik": "^2.2.9",
     "jspdf": "^2.5.1",
-=======
     "firebase": "^9.6.10",
     "moralis": "^1.5.9",
->>>>>>> ddf8d40426134da03d376721e5c77f4ab201534f
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",
@@ -53,15 +50,6 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@nomiclabs/hardhat-waffle": "^2.0.3",
-    "autoprefixer": "^10.4.4",
-    "ethereum-waffle": "^3.0.0",
-    "ethers": "^5.0.0",
-    "hardhat": "^2.9.3",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.23"
-=======
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.23",
@@ -70,6 +58,5 @@
     "ethereum-waffle": "^3.0.0",
     "ethers": "^5.0.0",
     "hardhat": "^2.9.3"
->>>>>>> ddf8d40426134da03d376721e5c77f4ab201534f
   }
 }

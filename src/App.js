@@ -1,32 +1,10 @@
-<<<<<<< HEAD
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Stack from "@mui/material/Stack";
-import { styled } from "@mui/material/styles";
-import ArticleIcon from "@mui/icons-material/Article";
-import image from "./assets/bg.jpg";
-import "./App.css";
-import Landing from "./Landing";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ReportForm from "./ReportForm";
-=======
 import React, { useEffect } from "react";
 import { useMoralis } from "react-moralis";
 import "./App.css";
 import Home from "./Home";
 import Landing from "./landing";
+import ReportForm from "./ReportForm";
 
->>>>>>> ddf8d40426134da03d376721e5c77f4ab201534f
 // const Item = styled(Paper)(({ theme }) => ({
 //   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
 //   ...theme.typography.body2,
@@ -187,12 +165,8 @@ import Landing from "./landing";
 // export default ResponsiveAppBar;
 
 const App = () => {
-<<<<<<< HEAD
-  return <ReportForm />;
-=======
   const { user, isAuthenticated } = useMoralis();
-  return isAuthenticated && user ? <Home /> : <Landing />;
->>>>>>> ddf8d40426134da03d376721e5c77f4ab201534f
+  return isAuthenticated && user ? <ReportForm /> : <Landing />;
 };
 
 export default App;
