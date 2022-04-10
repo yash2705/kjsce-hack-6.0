@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useMoralis } from "react-moralis";
 import { query, collection, where, getDocs } from "firebase/firestore";
 import db from "../firebase.config";
+import ReportForm from "../ReportForm";
 
 const Hero = () => {
   const { authenticate, isAuthenticated, user } = useMoralis();
@@ -20,9 +21,9 @@ const Hero = () => {
       );
 
       const querySnapshot = await getDocs(q);
-      if (querySnapshot.size === 1) return console.log(user);
-
-      return console.log("No user found");
+      if (querySnapshot.size === 1) return <ReportForm />;
+    } else {
+      return <div>INVALID CREDENTIALS</div>;
     }
   };
 

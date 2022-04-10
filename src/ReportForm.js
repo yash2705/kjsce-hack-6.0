@@ -139,7 +139,7 @@ const ReportForm = () => {
           />
         </div>
       )}
-      <button type="submit" onClick={} />
+      <button type="submit" onClick={() => {}} />
     </div>
   );
 };
