@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -18,6 +17,7 @@ import image from "./assets/bg.jpg";
 import "./App.css";
 import Landing from "./Landing";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ReportForm from "./ReportForm";
 // const Item = styled(Paper)(({ theme }) => ({
 //   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
 //   ...theme.typography.body2,
@@ -178,20 +178,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // export default ResponsiveAppBar;
 
 const App = () => {
-  return <Landing />;
+  return <ReportForm />;
 };
-=======
-import Card from "./components/Card";
-import Navbar from "./components/Navbar";
-
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Card />
-    </>
-  );
-}
->>>>>>> 0253f73760fce326f6ec58ac5dd47a89cf97afd6
 
 export default App;
