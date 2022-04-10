@@ -21,8 +21,8 @@ const Features = () => {
 };
 
 const styles = {
-  largeFont: `text-3xl text-black font-medium text-center mt-6`,
-  wrapper: `items-center space-y-4`,
+  largeFont: `text-3xl text-black font-medium text-center pt-10`,
+  wrapper: `items-center space-y-4 bg-slate-100`,
   cardContainer: `max-w-6xl p-4 lg:mx-auto lg:my-auto md:grid md:grid-cols-3 space-y-4 ml-8 mr-8 md:gap-4 lg:gap-8 items-center min-h-max md:space-y-0`,
 };
 
@@ -44,7 +44,7 @@ const features = [
   {
     id: 3,
     title: "Fully Decentralized",
-    description: "Encouragement from supporters.",
+    description: "All your reports are stored on the IPFS.",
     image: "https://cdn-icons-png.flaticon.com/512/2586/2586159.png",
   },
   {
@@ -56,15 +56,16 @@ const features = [
   },
   {
     id: 5,
-    title: "Safe and Secure",
-    description: "No need to give us your bank/aadhar card details.",
+    title: "24/7 Availability",
+    description:
+      "The Polygon(MATIC) blockchain never sleeps, and neither does MedChain",
     image:
       "https://ourbigitalianadventure.com/wp-content/uploads/2016/11/bank-non.png",
   },
   {
     id: 6,
-    title: "Medical Reports at your FingerTips",
-    description: "One Stop solution for all your medical reports.",
+    title: "Reports, Prescriptions and More...",
+    description: "One Stop solution for all your medical needs.",
     image:
       "https://icones.pro/wp-content/uploads/2021/06/icone-fichier-document-noir.png",
   },

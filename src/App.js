@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -18,6 +19,14 @@ import "./App.css";
 import Landing from "./Landing";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReportForm from "./ReportForm";
+=======
+import React, { useEffect } from "react";
+import { useMoralis } from "react-moralis";
+import "./App.css";
+import Home from "./Home";
+import Landing from "./landing";
+
+>>>>>>> ddf8d40426134da03d376721e5c77f4ab201534f
 // const Item = styled(Paper)(({ theme }) => ({
 //   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
 //   ...theme.typography.body2,
@@ -178,7 +187,12 @@ import ReportForm from "./ReportForm";
 // export default ResponsiveAppBar;
 
 const App = () => {
+<<<<<<< HEAD
   return <ReportForm />;
+=======
+  const { user, isAuthenticated } = useMoralis();
+  return isAuthenticated && user ? <Home /> : <Landing />;
+>>>>>>> ddf8d40426134da03d376721e5c77f4ab201534f
 };
 
 export default App;
